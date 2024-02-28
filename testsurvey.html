@@ -14,13 +14,20 @@
             <main>
                 <section>
                     <h1 id="homeHeader">Test Survey</h1>
-                    <p>Wow, a cool survey! How impressive</p>
+                    <p>We like to harvest data yay!</p>
                 </section>
                 <section>
                     <form action="https://send.pageclip.co/cjFMs15YG7ofCuKMitQLnI65CCFlggmF/test-survey" method="post">
                         <div>
                             <label for="name">What's your name?</label>
                             <input id="name" type="text" name="name">
+                        </div>
+                        <div>
+                            <p>What do you like?</p>
+                            <label for="pizza">Pizza</label>
+                            <input id="likes_pizza" type="checkbox" name="likes[pizza]">
+                            <label for="burgers">Burgers</label>
+                            <input id="likes_burgers" type="checkbox" name="likes[burgers]">
                         </div>
                         <br>
                         <aui-buttons>
