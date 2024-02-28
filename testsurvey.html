@@ -5,6 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
         <link rel="stylesheet" href="aui/src/adaptui.css">
+        <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
     </head>
     <body>
         <aui-screen id="homepage">
@@ -15,6 +16,18 @@
                 <section>
                     <h1 id="homeHeader">Test Survey</h1>
                     <p>Wow, a cool survey! How impressive</p>
+                </section>
+                <section>
+                    <form action="https://send.pageclip.co/cjFMs15YG7ofCuKMitQLnI65CCFlggmF/test-survey" method="post">
+                        <div>
+                            <label for="name">What's your name?</label>
+                            <input id="name" type="text" name="name">
+                        </div>
+                        <br>
+                        <aui-buttons>
+                            <button id="submitButton" type="submit" class="pageclip-form__submit">Submit</button>
+                        </aui-buttons>
+                    </form>
                 </section>
             </main>
         </aui-screen>
