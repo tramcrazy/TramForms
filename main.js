@@ -1,15 +1,13 @@
 /*function submitForm() {
     let form = document.getElementById("mainForm");
+    let formData = new FormData(form)
     let submitButton = document.getElementById("submitButton");
     submitButton.disabled = true;
     submitButton.innerHTML = "Please wait...";
-    Pageclip.form(form, {
-        onResponse: function (error, response) {
-            window.location.href = "google.com";
-        }
-    });
+
 }*/
-let form = document.getElementById("mainForm");
-Pageclip.form(form, {
-    successTemplate: '<span>Test</span>'
-});
+
+mainForm.onsubmit = async (e) => {
+    e.preventDefault();
+
+    let response = await fetch("https://send.pageclip.co/cjFMs15YG7ofCuKMitQLnI65CCFlggmF/" + mainForm.pageclipname)
