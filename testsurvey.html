@@ -5,6 +5,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
         <link rel="stylesheet" href="aui/src/adaptui.css">
+        <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+        <script src="main.js" charset="utf-8"></script>
     </head>
     <body>
         <aui-screen id="homepage">
@@ -15,21 +17,21 @@
                 <section>
                     <h1 id="homeHeader">Test Survey</h1>
                     <p>All responses are deleted after a period of time... it's a test after all!</p>
-                    <form action="https://send.pageclip.co/cjFMs15YG7ofCuKMitQLnI65CCFlggmF/test-survey" method="post">
+                    <form action="https://send.pageclip.co/cjFMs15YG7ofCuKMitQLnI65CCFlggmF/test-survey" method="post" class="pageclip-form">
                         <div>
                             <label for="name">What's your name?</label>
                             <input id="name" type="text" name="name" autocomplete="name">
                         </div>
                         <div>
                             <p>What do you like?</p>
-                            <input id="likes_pizza" type="checkbox" name="likes[pizza]" aui-mode="primary">
-                            <label for="likes_pizza">Pizza</label>
-                            <input id="likes_burgers" type="checkbox" name="likes[burgers]" aui-mode="primary">
-                            <label for="likes_burgers">Burgers</label>
+                            <input id="likesPizza" type="checkbox" name="likes[pizza]" aui-mode="primary">
+                            <label for="likesPizza">Pizza</label>
+                            <input id="likesBurgers" type="checkbox" name="likes[burgers]" aui-mode="primary">
+                            <label for="likesBurgers">Burgers</label>
                         </div>
                         <br>
                         <aui-buttons>
-                            <button id="submitButton" type="submit">Submit</button>
+                            <button id="submitButton">Submit</button>
                         </aui-buttons>
                     </form>
                 </section>
