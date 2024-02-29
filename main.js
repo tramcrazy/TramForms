@@ -9,5 +9,13 @@
 
 mainForm.onsubmit = async (e) => {
     e.preventDefault();
-
-    let response = await fetch("https://send.pageclip.co/cjFMs15YG7ofCuKMitQLnI65CCFlggmF/" + mainForm.pageclipname)
+    let submitButton = document.getElementById("submitButton");
+    submitButton.disabled = true;
+    submitButton.innerHTML = "Please wait...";
+    let response = await fetch("https://send.pageclip.co/cjFMs15YG7ofCuKMitQLnI65CCFlggmF/" + mainForm.getAttribute("pageclip-name"), {
+        method: 'POST',
+        body: new FormData(mainForm)
+    });
+    submitButton.innerHTML = "Thank you!";
+    window.location.href = "https://google.com"
+}
