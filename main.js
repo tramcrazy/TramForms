@@ -11,7 +11,5 @@
 }*/
 let form = document.getElementById("mainForm");
 Pageclip.form(form, {
-    onResponse: function (error, response) {
-        window.location.href = "https://google.com";
-    }
+    successTemplate: '<span>Test</span>'
 });
