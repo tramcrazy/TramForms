@@ -6,7 +6,7 @@
     submitButton.innerHTML = "Please wait...";
 
 }*/
-
+//mainForm = document.getElementById("mainForm");
 mainForm.onsubmit = async (e) => {
     e.preventDefault();
     let submitButton = document.getElementById("submitButton");
