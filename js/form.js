@@ -9,6 +9,7 @@ mainForm.onsubmit = async (e) => {
         body: new URLSearchParams(mainFormData)
     });
     submitButton.innerHTML = "Thank you!";
+    await new Promise(r => setTimeout(r, 1000));
     localStorage.setItem("completedForm", document.getElementById("homeHeader").innerHTML);
     window.location.href = "/thanks.html";
 }
