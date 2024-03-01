@@ -9,6 +9,6 @@ mainForm.onsubmit = async (e) => {
         body: new URLSearchParams(mainFormData)
     });
     submitButton.innerHTML = "Thank you!";
-    localStorage.setItem("completedForm", document.title);
+    localStorage.setItem("completedForm", document.getElementById("homeHeader").innerHTML);
     window.location.href = "https://google.com";
 }
