@@ -17,7 +17,6 @@ mainForm.onsubmit = async (e) => {
         method: 'POST',
         body: new URLSearchParams(mainFormData)
     });
-    console.log(result.message);
     submitButton.innerHTML = "Thank you!";
     window.location.href = "https://google.com"
 }
