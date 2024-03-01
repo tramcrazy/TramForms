@@ -16,6 +16,8 @@ mainForm.onsubmit = async (e) => {
         method: 'POST',
         body: new FormData(mainForm)
     });
+    let result = await response.json();
+    console.log(result.message);
     submitButton.innerHTML = "Thank you!";
     window.location.href = "https://google.com"
 }
