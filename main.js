@@ -1,12 +1,3 @@
-/*function submitForm() {
-    let form = document.getElementById("mainForm");
-    let formData = new FormData(form)
-    let submitButton = document.getElementById("submitButton");
-    submitButton.disabled = true;
-    submitButton.innerHTML = "Please wait...";
-
-}*/
-//mainForm = document.getElementById("mainForm");
 mainForm.onsubmit = async (e) => {
     e.preventDefault();
     let submitButton = document.getElementById("submitButton");
