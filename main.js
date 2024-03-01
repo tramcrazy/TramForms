@@ -12,9 +12,10 @@ mainForm.onsubmit = async (e) => {
     let submitButton = document.getElementById("submitButton");
     submitButton.disabled = true;
     submitButton.innerHTML = "Please wait...";
+    let mainFormData = new FormData(mainForm);
     let response = await fetch("https://send.pageclip.co/cjFMs15YG7ofCuKMitQLnI65CCFlggmF/" + mainForm.getAttribute("pageclip-name"), {
         method: 'POST',
-        body: new FormData(mainForm)
+        body: new URLSearchParams(mainFormData)
     });
     let result = await response.json();
     console.log(result.message);
