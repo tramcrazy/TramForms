@@ -10,5 +10,5 @@ mainForm.onsubmit = async (e) => {
     });
     submitButton.innerHTML = "Thank you!";
     localStorage.setItem("completedForm", document.getElementById("homeHeader").innerHTML);
-    window.location.href = "https://google.com";
+    window.location.href = "/thanks.html";
 }
